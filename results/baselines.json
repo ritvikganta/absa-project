@@ -1,0 +1,140 @@
+{
+  "majority_class": {
+    "accuracy": 0.0,
+    "macro_f1": 0.0,
+    "weighted_f1": 0.0,
+    "per_class_f1": {
+      "positive": 0.0,
+      "neutral": 0.0
+    },
+    "classification_report": "              precision    recall  f1-score   support\n\n    positive       0.00      0.00      0.00       0.0\n     neutral       0.00      0.00      0.00    1134.0\n\n    accuracy                           0.00    1134.0\n   macro avg       0.00      0.00      0.00    1134.0\nweighted avg       0.00      0.00      0.00    1134.0\n",
+    "confusion_matrix": [
+      [
+        0,
+        0
+      ],
+      [
+        1134,
+        0
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "positive",
+      "neutral"
+    ],
+    "model": "majority_class"
+  },
+  "nbow": {
+    "accuracy": 0.04056437389770723,
+    "macro_f1": 0.025988700564971753,
+    "weighted_f1": 0.07796610169491526,
+    "per_class_f1": {
+      "positive": 0.0,
+      "negative": 0.0,
+      "neutral": 0.07796610169491526
+    },
+    "classification_report": "              precision    recall  f1-score   support\n\n    positive       0.00      0.00      0.00         0\n    negative       0.00      0.00      0.00         0\n     neutral       1.00      0.04      0.08      1134\n\n    accuracy                           0.04      1134\n   macro avg       0.33      0.01      0.03      1134\nweighted avg       1.00      0.04      0.08      1134\n",
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        940,
+        148,
+        46
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "positive",
+      "negative",
+      "neutral"
+    ],
+    "model": "nbow"
+  },
+  "tfidf_lr": {
+    "accuracy": 0.12433862433862433,
+    "macro_f1": 0.05529411764705883,
+    "weighted_f1": 0.2211764705882353,
+    "per_class_f1": {
+      "positive": 0.0,
+      "negative": 0.0,
+      "neutral": 0.2211764705882353,
+      "conflict": 0.0
+    },
+    "classification_report": "              precision    recall  f1-score   support\n\n    positive       0.00      0.00      0.00         0\n    negative       0.00      0.00      0.00         0\n     neutral       1.00      0.12      0.22      1134\n    conflict       0.00      0.00      0.00         0\n\n    accuracy                           0.12      1134\n   macro avg       0.25      0.03      0.06      1134\nweighted avg       1.00      0.12      0.22      1134\n",
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        744,
+        227,
+        141,
+        22
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "positive",
+      "negative",
+      "neutral",
+      "conflict"
+    ],
+    "model": "tfidf_lr"
+  },
+  "vader": {
+    "accuracy": 0.1746031746031746,
+    "macro_f1": 0.0990990990990991,
+    "weighted_f1": 0.2972972972972973,
+    "per_class_f1": {
+      "positive": 0.0,
+      "negative": 0.0,
+      "neutral": 0.2972972972972973
+    },
+    "classification_report": "              precision    recall  f1-score   support\n\n    positive       0.00      0.00      0.00         0\n    negative       0.00      0.00      0.00         0\n     neutral       1.00      0.17      0.30      1134\n\n    accuracy                           0.17      1134\n   macro avg       0.33      0.06      0.10      1134\nweighted avg       1.00      0.17      0.30      1134\n",
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        777,
+        159,
+        198
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "positive",
+      "negative",
+      "neutral"
+    ],
+    "model": "vader"
+  }
+}

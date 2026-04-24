@@ -1,0 +1,27 @@
+{
+  "negation": {
+    "accuracy": 0.01,
+    "macro_f1": 0.009900990099009901,
+    "weighted_f1": 0.019801980198019802,
+    "per_class_f1": {
+      "positive": 0.0,
+      "neutral": 0.019801980198019802
+    },
+    "classification_report": "              precision    recall  f1-score   support\n\n    positive       0.00      0.00      0.00         0\n     neutral       1.00      0.01      0.02       100\n\n    accuracy                           0.01       100\n   macro avg       0.50      0.01      0.01       100\nweighted avg       1.00      0.01      0.02       100\n",
+    "confusion_matrix": [
+      [
+        0,
+        0
+      ],
+      [
+        99,
+        1
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "positive",
+      "neutral"
+    ],
+    "model": "bert_negation"
+  }
+}

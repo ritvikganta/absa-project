@@ -70,7 +70,7 @@ def _has_multi_aspect(text, aspect):
 
 
 def categorize_error(text, aspect, true_label, pred_label):
-    from scripts.preprocess import ID_TO_LABEL
+    ID_TO_LABEL = {0: "positive", 1: "negative", 2: "neutral", 3: "conflict"}
     true_name = ID_TO_LABEL.get(true_label, "neutral")
 
     if true_label == 3:  # conflict

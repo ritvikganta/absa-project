@@ -1,0 +1,723 @@
+{
+  "total_examples": 100,
+  "total_errors": 100,
+  "error_rate": 1.0,
+  "category_counts": {
+    "conflict_class": 0,
+    "boundary": 0,
+    "negation": 13,
+    "implicit": 81,
+    "multi_aspect": 5,
+    "other": 1
+  },
+  "category_pct": {
+    "conflict_class": 0.0,
+    "boundary": 0.0,
+    "negation": 0.13,
+    "implicit": 0.81,
+    "multi_aspect": 0.05,
+    "other": 0.01
+  },
+  "errors": [
+    {
+      "text": "You can eat gourmet food at a fast food price.",
+      "aspect": "price",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "I HAVE NEVER HAD A BAD MEAL(OR BAD SERVICE )@ PIGALLE.",
+      "aspect": "SERVICE",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "negation"
+    },
+    {
+      "text": "First walking in the place seemed to have great ambience.",
+      "aspect": "ambience",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "THE BANANA PUDDING THEY SERVE HAS NEVER SEEN AN OVEN,THE CRABCAKES ARE WAY OVER SALTED AND DON'T GET ME STARTED ON THE VERY GREASY MAC AND CHEESE.",
+      "aspect": "MAC AND CHEESE",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Dishes denoted as \"Roy's Classics\" (marked on the menu with asterisks) are tried-and-true recipes, such as macadamia-crusted mahi mahi, or subtly sweet honey-mustard beef short ribs.",
+      "aspect": "macadamia-crusted mahi mahi",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "I'm glad I did as the food was very good and the staff was friendly, courteous and efficient.",
+      "aspect": "staff",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "The service was pretty poor all around, the food was well below average relative to the cost, and outside there is a crazy bum who harasses every customer who leaves the place.",
+      "aspect": "food",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "multi_aspect"
+    },
+    {
+      "text": "The staff should be a bit more friendly.",
+      "aspect": "staff",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Had dinner here on a Friday and the food was great.",
+      "aspect": "dinner",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Good cake BUT: it was not the best cake i've ever had, and definately not worth standing outside on the sidewalk being herded like cattle by indifferent and overworked employees.",
+      "aspect": "cake",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "negation"
+    },
+    {
+      "text": "Not only is the food authentic, but the staff here are practically off-the-boat, they are young and hip and know what they are doing when it comes to food and wine.",
+      "aspect": "food",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "negation"
+    },
+    {
+      "text": "this is still one of my most favorite restaurants in the area the food is inexpensive but very good (kimono shrimp special was excellent) and has a great atmosphere.",
+      "aspect": "kimono shrimp special",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "The other times I've gone it's romantic date heaven, you can walk in get a booth by the windows, be treated like a VIP in a not-crowded place, with great food and service.",
+      "aspect": "food",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "negation"
+    },
+    {
+      "text": "It has good music, nice tapas, an interesting selection of wines (primarily Spanish) and a lowkey hip neighborhood clientele.",
+      "aspect": "selection of wines (primarily Spanish)",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "The lone argentine chorizo appetizer at $8.95 was a heavy fennel flavored Italian sausage like the ones that sell for $2.99/lb at the store.",
+      "aspect": "argentine chorizo appetizer",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "For someone who used to hate Indian food, Baluchi's has changed my mid.",
+      "aspect": "Indian food",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "for about eleven bucks you get a gigantic burrito (or tacos), margarita, and dessert.",
+      "aspect": "margarita",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "All-time favorites include the Big Mac, Chicken McNuggets, Filet-O-Fish sandwich and McDonald's famous french fries; lighter options like entree-sized salads are also available.",
+      "aspect": "Filet-O-Fish sandwich",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Dishes denoted as \"Roy's Classics\" (marked on the menu with asterisks) are tried-and-true recipes, such as macadamia-crusted mahi mahi, or subtly sweet honey-mustard beef short ribs.",
+      "aspect": "\"Roy's Classics\"",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "The service is really fast and friendly, and the value is great.",
+      "aspect": "value",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "I was highly disappointed by their service and food.",
+      "aspect": "service",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "everything is scrumptious, from the excellent service by cute waitresses, to the extremely lush atmosphere.",
+      "aspect": "atmosphere",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "I always find myself asking the waiter to make something bland and different than what is on the menu.",
+      "aspect": "menu",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "The waiters ALWAYS look angry and even ignore their high-tipping regulars.",
+      "aspect": "waiters",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Yes, they're a bit more expensive then typical, but then again, so is their food.",
+      "aspect": "food",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "multi_aspect"
+    },
+    {
+      "text": "If you're craving some serious indian food and desire a cozy ambiance, this is quite and exquisite choice.",
+      "aspect": "ambiance",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Food portion was SMALL and below average.",
+      "aspect": "Food portion",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "multi_aspect"
+    },
+    {
+      "text": "everything is scrumptious, from the excellent service by cute waitresses, to the extremely lush atmosphere.",
+      "aspect": "waitresses",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "This bar has it all - great drinks, cool atmosphere, excellent service and delicious food.",
+      "aspect": "drinks",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Also get the Onion Rings -- best we've ever had.",
+      "aspect": "Onion Rings",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "One caveat: Some of the curried casseroles can be a trifle harsh.",
+      "aspect": "curried casseroles",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Host and Hostess was quite rude.",
+      "aspect": "Host",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "The food was good, the service prompt, and the price very reasonable.",
+      "aspect": "price",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "If you're looking to taste some great Indian food and want good service, definitely visit Curry Leaf.",
+      "aspect": "service",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "All are GREAT - poori, naan, paratha all FRESH.",
+      "aspect": "paratha",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "menu - uneventful, small.",
+      "aspect": "menu",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "It doesn't look like much on the outside, but the minute you walk inside, it's a whole other atmosphere.",
+      "aspect": "atmosphere",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Prices even outside of restaurant week were great.",
+      "aspect": "Prices",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "jazz singer had a nice voice + she made us all get up to dance to shake some cals to eat some more.",
+      "aspect": "jazz singer",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "The other times I've gone it's romantic date heaven, you can walk in get a booth by the windows, be treated like a VIP in a not-crowded place, with great food and service.",
+      "aspect": "booth by the windows",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "negation"
+    },
+    {
+      "text": "This bar has it all - great drinks, cool atmosphere, excellent service and delicious food.",
+      "aspect": "atmosphere",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "All toppings are so fresh you'd think they had their own vegetable garden and the crust is so perfect, that one actually thinks of how it was made.",
+      "aspect": "toppings",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "The portions are very large and the service is fantastic!!",
+      "aspect": "portions",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Even when the chef is not in the house, the food and service are right on target.",
+      "aspect": "chef",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "negation"
+    },
+    {
+      "text": "The food was good, the service prompt, and the price very reasonable.",
+      "aspect": "food",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Sweet Irish bartender is always happy and able to bring a smile to my friends a my face.",
+      "aspect": "bartender",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "The menu is interesting and quite reasonably priced.",
+      "aspect": "menu",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "From the erbazzone emiliana to the mostarda on the cheese plate, the dishes at this restaurant are all handled with delicate care.",
+      "aspect": "mostarda on the cheese plate",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "We were seated promptly in close proximity to the dance floor.",
+      "aspect": "dance floor",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Good service, great food, good value, and never have to wait in line!",
+      "aspect": "food",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "negation"
+    },
+    {
+      "text": "The service is pretty good.",
+      "aspect": "service",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "But dinner here is never disappointing, even if the prices are a bit over the top.",
+      "aspect": "prices",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "negation"
+    },
+    {
+      "text": "Desserts include flan and sopaipillas.",
+      "aspect": "flan",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "The host (owner) and servers are personable and caring.",
+      "aspect": "servers",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "The appetizers are ok, but the service is slow.",
+      "aspect": "service",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "multi_aspect"
+    },
+    {
+      "text": "Entrees include classics like lasagna, fettuccine Alfredo and chicken parmigiana.",
+      "aspect": "chicken parmigiana",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Stick to the items the place does best, brisket, ribs, wings, cajun shrimp is good, not great.",
+      "aspect": "ribs",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "negation"
+    },
+    {
+      "text": "The room is a gorgeous, bi-level space and the long bar perfect for a drink.",
+      "aspect": "room",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "The service is great, my soup always arrives nice and hot.",
+      "aspect": "service",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "The manager then told us we could order from whatever menu we wanted but by that time we were so annoyed with the waiter and the resturant that we let and went some place else.",
+      "aspect": "waiter",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "MY date and I both ordered the Branzini and both felt the fish was very average.",
+      "aspect": "fish",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "other"
+    },
+    {
+      "text": "but, the filet mignon was not very good at all cocktail hour includes free appetizers (nice non-sushi selection).",
+      "aspect": "filet mignon",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "negation"
+    },
+    {
+      "text": "The food is surprisingly good, and the decor is nice.",
+      "aspect": "food",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Casablanca servces delicious falafel, tabouleh, humus and other Mediterranean delights, which are all very inexpensive.",
+      "aspect": "tabouleh",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Owner is pleasant and entertaining.",
+      "aspect": "Owner",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "My Chelsea's impressive and creative menu includes modern, Westernized Japanese dishes such as Foie Gras Unagi Napolean, Jap style hamburger steak, spicy cod roe spaghetti, black cod with miso base, and rack of lamb in black truffle sauce, to name a few.",
+      "aspect": "Foie Gras Unagi Napolean",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "I had roast chicken and a salad.",
+      "aspect": "roast chicken",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "There's candlelight and music.",
+      "aspect": "music",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Service is usually pretty good.",
+      "aspect": "Service",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Generously garnished, organic grilled burgers are the most popular dish, but the Jerusalem market-style falafel wraps and Mediterranean salads--layered with beets, goat cheese and walnuts--are equally scrumptious.",
+      "aspect": "dish",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "The service was pretty poor all around, the food was well below average relative to the cost, and outside there is a crazy bum who harasses every customer who leaves the place.",
+      "aspect": "cost",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "multi_aspect"
+    },
+    {
+      "text": "My chicken was completely dried out and on the cold side and the sauce was not very flavorful.",
+      "aspect": "chicken",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "The food is great and the prices are reasonable.",
+      "aspect": "food",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "The waitstaff is solicitous and friendly and always seems glad to see us, and the food is wonderful, if not stunningly creative.",
+      "aspect": "waitstaff",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Perfectly al dente pasta, not drowned in sauce -- generous portions.",
+      "aspect": "sauce",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "negation"
+    },
+    {
+      "text": "it is a cozy place to go with a couple of friends.",
+      "aspect": "place",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "this without question is one of the worst hotdogs i have ever had.",
+      "aspect": "hotdogs",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "negation"
+    },
+    {
+      "text": "Disappointingly, their wonderful Saketini has been taken off the bar menu.",
+      "aspect": "bar menu",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "The sauce is excellent (very fresh) with dabs of real mozzarella.",
+      "aspect": "sauce",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Sandwiches, burgers and salads, like the lemon-dressed cobb, are classic successes.",
+      "aspect": "Sandwiches",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "In addition to great hot dogs, DOTP has wonderful breakfast sandwiches that feature, in addition to great things like tator tots and English muffins, a delicious NJ-based pork product know to us Jersey girls and boys as Taylor ham.",
+      "aspect": "breakfast sandwiches",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "From the beginning, we were met by friendly staff memebers, and the convienent parking at Chelsea Piers made it easy for us to get to the boat.",
+      "aspect": "staff memebers",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Waiters are very friendly and the pasta is out of this world.",
+      "aspect": "pasta",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Two complaints- their appetizer selection stinks, it would be nice to get some mozzarella sticks on the menu.",
+      "aspect": "appetizer selection",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "The happy hour is so cheap, but that does not reflect the service or the atmosphere.",
+      "aspect": "atmosphere",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "negation"
+    },
+    {
+      "text": "All are GREAT - poori, naan, paratha all FRESH.",
+      "aspect": "naan",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "rice dishes and noodle dishes rarely exceed $5 and add on a refreshing ice drink for $2 and you're set for the night!",
+      "aspect": "noodle dishes",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Try the ribs, sizzling beef and couple it with coconut rice.",
+      "aspect": "coconut rice",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Be sure to try the Smoked Trout...Lamb Chops, Veal Chops, Rabbit, the potato gratin, on and on and on...",
+      "aspect": "Lamb Chops",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "In addition to great hot dogs, DOTP has wonderful breakfast sandwiches that feature, in addition to great things like tator tots and English muffins, a delicious NJ-based pork product know to us Jersey girls and boys as Taylor ham.",
+      "aspect": "tator tots",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "A con was the slow bar service.",
+      "aspect": "bar service",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Not only is the food authentic, but the staff here are practically off-the-boat, they are young and hip and know what they are doing when it comes to food and wine.",
+      "aspect": "wine",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Way too much money for such a terrible meal.",
+      "aspect": "meal",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "The food is great (big selection, reasonable prices) and the drinks are really good.",
+      "aspect": "food",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "From the erbazzone emiliana to the mostarda on the cheese plate, the dishes at this restaurant are all handled with delicate care.",
+      "aspect": "erbazzone emiliana",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Everyone who works there (the host, the bartender, the servers) is so helpful.",
+      "aspect": "host",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Great food, great drinks, nice dining atmosphere.",
+      "aspect": "food",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "However, the service is absolutely horrible.",
+      "aspect": "service",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "Although small, it has beautiful ambience, excellent food (the catfish is delicious - if ya don't mind it a lil salty) and attentive service.",
+      "aspect": "service",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    },
+    {
+      "text": "It's just everything...the food, the atmosphere...the incrediby kind and gracious hostess.",
+      "aspect": "atmosphere",
+      "true_label": 2,
+      "pred_label": 0,
+      "category": "implicit"
+    }
+  ]
+}

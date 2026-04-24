@@ -12,11 +12,11 @@ import torch
 from torch.utils.data import DataLoader, Dataset
 from tqdm import tqdm
 from transformers import (
-    AdamW,
     AutoModelForSequenceClassification,
     AutoTokenizer,
     get_linear_schedule_with_warmup,
 )
+from torch.optim import AdamW
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from scripts.evaluate import compute_metrics, save_results
