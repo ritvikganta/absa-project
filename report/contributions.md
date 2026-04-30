@@ -4,19 +4,18 @@
 - Data preprocessing pipeline (`scripts/preprocess.py`)
 - Baseline replication and evaluation framework (`models/baselines.py`, `scripts/evaluate.py`)
 - Manual error annotation and taxonomy design (`scripts/error_taxonomy.py`)
-- EDA notebook and baseline notebook
 
 **Sidharth Pasula**
-- Negation-aware preprocessing intervention (negation marking via NEGATION_CUES)
+- Negation-aware preprocessing intervention (negation marking via NEGATION_CUES, `scripts/interventions.py`)
 - Implicit aspect identification in error taxonomy
-- Interventions notebook
+- Error taxonomy results (`results/errors.json`, `results/interventions.json`)
 
 **Tanay Shrivastava**
-- Conflict-class oversampling intervention
-- Multi-aspect sentence decomposition intervention
-- BERT training notebooks and checkpoint management
+- Conflict-class oversampling intervention (`scripts/interventions.py`)
+- Multi-aspect sentence decomposition intervention (`scripts/interventions.py`)
+- BERT fine-tuning and checkpoint management (`models/bert_model.py`, `results/bert.json`)
 
 **Ritvik Ganta**
-- LLM evaluation (GPT-4o zero-shot / few-shot, `models/llm_eval.py`)
+- LLM zero-shot evaluation using BART-large-mnli (`models/llm_eval.py`, `results/llm_local.json`)
+- Results overview notebook (`notebooks/results_overview.ipynb`)
 - Final report writing and results summary
-- Results summary notebook and comparison tables
