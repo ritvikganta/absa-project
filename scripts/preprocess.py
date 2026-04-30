@@ -34,13 +34,19 @@ def _hf_to_df(hf_dataset):
 
 def download_dataset():
     from datasets import load_dataset
+    from sklearn.model_selection import train_test_split
 
     os.makedirs(RAW_DIR, exist_ok=True)
     print("Downloading tomaarsen/setfit-absa-semeval-restaurants ...")
     ds = load_dataset("tomaarsen/setfit-absa-semeval-restaurants")
 
-    train_df = _hf_to_df(ds["train"])
-    test_df = _hf_to_df(ds["test"])
+    # HuggingFace test split has no labels — split the labeled train data ourselves
+    full_df = _hf_to_df(ds["train"])
+    train_df, test_df = train_test_split(
+        full_df, test_size=0.2, random_state=42, stratify=full_df["label"]
+    )
+    train_df = train_df.reset_index(drop=True)
+    test_df = test_df.reset_index(drop=True)
 
     train_df.to_csv(os.path.join(RAW_DIR, "train.csv"), index=False)
     test_df.to_csv(os.path.join(RAW_DIR, "test.csv"), index=False)
