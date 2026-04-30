@@ -1,27 +1,182 @@
 {
   "negation": {
-    "accuracy": 0.01,
-    "macro_f1": 0.009900990099009901,
-    "weighted_f1": 0.019801980198019802,
+    "accuracy": 0.7713125845737483,
+    "macro_f1": 0.5196059798951648,
+    "weighted_f1": 0.7550475835011463,
     "per_class_f1": {
-      "positive": 0.0,
-      "neutral": 0.019801980198019802
+      "positive": 0.8851351351351351,
+      "negative": 0.6814404432132964,
+      "neutral": 0.5118483412322274,
+      "conflict": 0.0
     },
-    "classification_report": "              precision    recall  f1-score   support\n\n    positive       0.00      0.00      0.00         0\n     neutral       1.00      0.01      0.02       100\n\n    accuracy                           0.01       100\n   macro avg       0.50      0.01      0.01       100\nweighted avg       1.00      0.01      0.02       100\n",
+    "classification_report": "              precision    recall  f1-score   support\n\n    positive       0.86      0.91      0.89       433\n    negative       0.61      0.76      0.68       161\n     neutral       0.64      0.43      0.51       127\n    conflict       0.00      0.00      0.00        18\n\n    accuracy                           0.77       739\n   macro avg       0.53      0.52      0.52       739\nweighted avg       0.75      0.77      0.76       739\n",
     "confusion_matrix": [
       [
-        0,
+        393,
+        29,
+        11,
         0
       ],
       [
-        99,
-        1
+        22,
+        123,
+        16,
+        0
+      ],
+      [
+        34,
+        39,
+        54,
+        0
+      ],
+      [
+        6,
+        9,
+        3,
+        0
       ]
     ],
     "confusion_matrix_labels": [
       "positive",
-      "neutral"
+      "negative",
+      "neutral",
+      "conflict"
     ],
     "model": "bert_negation"
+  },
+  "conflict_oversample": {
+    "accuracy": 0.7726657645466847,
+    "macro_f1": 0.6022896849694565,
+    "weighted_f1": 0.7636587246814722,
+    "per_class_f1": {
+      "positive": 0.8808988764044944,
+      "negative": 0.7151162790697675,
+      "neutral": 0.48756218905472637,
+      "conflict": 0.32558139534883723
+    },
+    "classification_report": "              precision    recall  f1-score   support\n\n    positive       0.86      0.91      0.88       433\n    negative       0.67      0.76      0.72       161\n     neutral       0.66      0.39      0.49       127\n    conflict       0.28      0.39      0.33        18\n\n    accuracy                           0.77       739\n   macro avg       0.62      0.61      0.60       739\nweighted avg       0.77      0.77      0.76       739\n",
+    "confusion_matrix": [
+      [
+        392,
+        21,
+        14,
+        6
+      ],
+      [
+        20,
+        123,
+        10,
+        8
+      ],
+      [
+        42,
+        32,
+        49,
+        4
+      ],
+      [
+        3,
+        7,
+        1,
+        7
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "positive",
+      "negative",
+      "neutral",
+      "conflict"
+    ],
+    "model": "bert_conflict_oversample"
+  },
+  "decompose": {
+    "accuracy": 0.7726657645466847,
+    "macro_f1": 0.5206884779694567,
+    "weighted_f1": 0.7570830548643523,
+    "per_class_f1": {
+      "positive": 0.8866213151927438,
+      "negative": 0.6961325966850829,
+      "neutral": 0.5,
+      "conflict": 0.0
+    },
+    "classification_report": "              precision    recall  f1-score   support\n\n    positive       0.87      0.90      0.89       433\n    negative       0.63      0.78      0.70       161\n     neutral       0.61      0.43      0.50       127\n    conflict       0.00      0.00      0.00        18\n\n    accuracy                           0.77       739\n   macro avg       0.53      0.53      0.52       739\nweighted avg       0.75      0.77      0.76       739\n",
+    "confusion_matrix": [
+      [
+        391,
+        26,
+        16,
+        0
+      ],
+      [
+        20,
+        126,
+        15,
+        0
+      ],
+      [
+        30,
+        43,
+        54,
+        0
+      ],
+      [
+        8,
+        6,
+        4,
+        0
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "positive",
+      "negative",
+      "neutral",
+      "conflict"
+    ],
+    "model": "bert_decompose"
+  },
+  "combined": {
+    "accuracy": 0.7645466847090663,
+    "macro_f1": 0.6058196994366736,
+    "weighted_f1": 0.7527673314697989,
+    "per_class_f1": {
+      "positive": 0.8873873873873874,
+      "negative": 0.6876790830945558,
+      "neutral": 0.422680412371134,
+      "conflict": 0.425531914893617
+    },
+    "classification_report": "              precision    recall  f1-score   support\n\n    positive       0.87      0.91      0.89       433\n    negative       0.64      0.75      0.69       161\n     neutral       0.61      0.32      0.42       127\n    conflict       0.34      0.56      0.43        18\n\n    accuracy                           0.76       739\n   macro avg       0.62      0.63      0.61       739\nweighted avg       0.76      0.76      0.75       739\n",
+    "confusion_matrix": [
+      [
+        394,
+        22,
+        7,
+        10
+      ],
+      [
+        16,
+        120,
+        19,
+        6
+      ],
+      [
+        41,
+        42,
+        41,
+        3
+      ],
+      [
+        4,
+        4,
+        0,
+        10
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "positive",
+      "negative",
+      "neutral",
+      "conflict"
+    ],
+    "model": "bert_combined"
   }
 }
